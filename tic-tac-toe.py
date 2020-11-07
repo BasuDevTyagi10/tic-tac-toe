@@ -10,7 +10,7 @@ class TicTacToe(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self, *args, **kwargs)
 
-        tk.Tk.iconbitmap(self,default="icon.ico")
+        tk.Tk.iconbitmap(self,default=".\icon.ico")
 
         container = tk.Frame(self)
         container.pack(side="top",fill="both",expand=True)
@@ -35,7 +35,7 @@ class MainMenu(tk.Frame):
     def __init__(self,parent,controller):
         tk.Frame.__init__(self,parent)
 
-        img = ImageTk.PhotoImage(Image.open("ttt_logo.png"))
+        img = ImageTk.PhotoImage(Image.open(".\\ttt_logo.png"))
         label = tk.Label(self,image=img,borderwidth=0,highlightthickness=0,relief="sunken")
         label.image = img
         label.pack(padx=10,pady=40)
